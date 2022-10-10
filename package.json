@@ -1,0 +1,42 @@
+{
+  "name": "kickstarter-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "lint": "stylelint \"./src/**/*.{css,less,sass,scss}\"",
+    "lint:fix": "stylelint \"./src/**/*.{css,less,sass,scss}\" --fix & prettier --write .",
+    "sass": "sass src/sass/main.scss src/styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-dmitriy-diachenko/kickstarter-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dev-dmitriy-diachenko/kickstarter-landing-page/issues"
+  },
+  "homepage": "https://github.com/dev-dmitriy-diachenko/kickstarter-landing-page#readme",
+  "browserslist": "> 0.25%, not dead, not op_mini all, last 2 versions",
+  "keywords": [],
+  "author": "Dmitriy Diachenko <dev.dmitriy.diachenko@gmail.com>",
+  "license": "ISC",
+  "lint-staged": {
+    "src/**/*.{css,less,sass,scss}": [
+      "prettier --write",
+      "stylelint --fix"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "sass": "^1.55.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
+  }
+}
