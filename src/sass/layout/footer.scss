@@ -1,0 +1,34 @@
+.footer {
+  &__row {
+    @include on-tablet {
+      display: block;
+    }
+
+    display: none;
+  }
+
+  &__container {
+    @extend %container;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+
+  &__up {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__social {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__terms {
+    color: $color-text-secondary;
+  }
+}
