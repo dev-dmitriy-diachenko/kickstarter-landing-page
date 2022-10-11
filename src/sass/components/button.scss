@@ -1,0 +1,82 @@
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: inherit;
+  transition: $default-transition;
+
+  &--buy {
+    background-color: $color-btn-buy-default;
+    color: #fff;
+
+    &:hover {
+      background-color: $color-btn-buy-hover;
+    }
+
+    &:disabled {
+      background-color: $color-btn-buy-disabled;
+    }
+  }
+
+  &--send {
+    background-color: $color-btn-send-default;
+    color: #fff;
+
+    &:hover {
+      background-color: $color-btn-send-hover;
+    }
+
+    &:disabled {
+      background-color: $color-btn-send-disabled;
+    }
+  }
+
+  &--homepage {
+    border: 1px solid $color-btn-homepage-default;
+    color: $color-btn-homepage-default;
+
+    &:hover {
+      border: 0;
+      background-color: $color-btn-homepage-hover;
+      color: #fff;
+    }
+  }
+
+  &--add-to-card {
+    border: 1px solid $color-btn-add-to-card-default;
+    color: $color-btn-add-to-card-default;
+
+    &:hover {
+      border: 0;
+      background-color: $color-btn-add-to-card-hover;
+      color: #fff;
+    }
+  }
+
+  &--see-more {
+    height: max-content;
+    color: $color-btn-see-more-default;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 40%;
+      margin-top: 6px;
+      border-bottom: 1px solid $color-btn-see-more-default;
+      transition: $default-transition;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--return-to-card {
+    color: $color-btn-return-to-card-default;
+
+    &:hover {
+      border: 1px solid $color-btn-return-to-card-default;
+    }
+  }
+}

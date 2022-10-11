@@ -1,0 +1,66 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: $default-transition;
+
+  &--logo {
+    width: 161px;
+    height: 24px;
+    background-image: url('../assets/images/svg/logo.svg');
+
+    &:hover {
+      background-image: url('../assets/images/svg/logo-hover.svg');
+    }
+  }
+
+  &--avatar {
+    @include on-desktop {
+      padding: 4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0c797a, #39bebf 50%, #eefafa 50%);
+      background-position: 100% 100%;
+      background-size: 250%;
+      transition: $default-transition;
+    }
+
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+
+  &--facebook {
+    background-image: url('../assets/images/svg/facebook.svg');
+
+    &:hover {
+      background-image: url('../assets/images/svg/facebook-hover.svg');
+    }
+  }
+
+  &--twitter {
+    background-image: url('../assets/images/svg/twitter.svg');
+
+    &:hover {
+      background-image: url('../assets/images/svg/twitter-hover.svg');
+    }
+  }
+
+  &--instagram {
+    background-image: url('../assets/images/svg/instagram.svg');
+
+    &:hover {
+      background-image: url('../assets/images/svg/instagram-hover.svg');
+    }
+  }
+
+  &--up {
+    background-image: url('../assets/images/svg/up.svg');
+
+    &:hover {
+      background-image: url('../assets/images/svg/up-hover.svg');
+    }
+  }
+}
