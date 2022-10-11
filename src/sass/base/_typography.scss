@@ -9,3 +9,132 @@
   font-family: Inter;
   src: url('../assets/fonts/Inter-Bold.ttf') format('truetype');
 }
+
+.page {
+  font-family: Inter, sans-serif;
+}
+
+.h1 {
+  @include on-tablet {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  @include on-desktop {
+    font-size: 64px;
+    line-height: 78px;
+  }
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.h2 {
+  @include on-tablet {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  @include on-desktop {
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.h3 {
+  @include on-tablet {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @include on-desktop {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.secondary-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.thirdary-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.qoute {
+  @include on-desktop {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hyphenate {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
