@@ -111,7 +111,7 @@
 }
 
 .qoute {
-  @include on-desktop {
+  @include on-tablet {
     font-size: 24px;
     line-height: 36px;
   }
