@@ -27,6 +27,9 @@
       transition: $default-transition;
     }
 
+    width: 62px;
+    height: 62px;
+
     &:hover {
       background-position: 0 0;
     }

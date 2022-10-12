@@ -1,4 +1,5 @@
 .btn {
+  display: block;
   width: 100px;
   height: 40px;
   background-color: inherit;
@@ -53,7 +54,7 @@
   }
 
   &--see-more {
-    height: max-content;
+    width: max-content;
     color: $color-btn-see-more-default;
 
     &::after {
