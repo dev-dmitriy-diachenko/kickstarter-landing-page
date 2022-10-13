@@ -21,7 +21,7 @@
   "author": "Dmitriy Diachenko <dev.dmitriy.diachenko@gmail.com>",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.{css,less,sass,scss}": [
+    "src/sass/*.{css,less,sass,scss}": [
       "prettier --write",
       "stylelint --fix"
     ]
