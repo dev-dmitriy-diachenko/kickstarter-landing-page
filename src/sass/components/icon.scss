@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
   transition: $default-transition;
 
   &--logo {
@@ -17,18 +18,28 @@
     }
   }
 
-  &--avatar {
-    @include on-desktop {
-      padding: 4px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #0c797a, #39bebf 50%, #eefafa 50%);
-      background-position: 100% 100%;
-      background-size: 250%;
-      transition: $default-transition;
-    }
+  &--burger-menu {
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/images/svg/burger-menu.svg');
+  }
 
+  &--close {
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/images/svg/close.svg');
+  }
+
+  &--avatar {
+    box-sizing: initial;
     width: 62px;
     height: 62px;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0c797a, #39bebf 50%, #eefafa 50%);
+    background-position: 100% 100%;
+    background-size: 250%;
+    transition: $default-transition;
 
     &:hover {
       background-position: 0 0;
