@@ -28,6 +28,7 @@
   &__card {
     flex-shrink: 0;
     width: 100%;
+    min-height: 310px;
     scroll-snap-align: center;
   }
 
