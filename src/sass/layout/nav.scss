@@ -1,0 +1,21 @@
+.nav {
+  @media screen and (min-width: 1024px) {
+    display: block;
+    padding: 28px 0;
+
+    &__list {
+      display: flex;
+      gap: 84px;
+      justify-content: center;
+    }
+
+    &__link {
+      &:hover {
+        color: #0c797a;
+        transition: $default-transition;
+      }
+    }
+  }
+
+  display: none;
+}

@@ -18,9 +18,16 @@
   }
 
   &__up {
+    @include on-tablet {
+      right: 34px;
+    }
+
+    @include on-desktop {
+      right: 120px;
+    }
+
     position: absolute;
     top: 0;
-    right: 0;
   }
 
   &__social {

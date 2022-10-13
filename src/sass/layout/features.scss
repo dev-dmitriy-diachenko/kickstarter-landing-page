@@ -1,0 +1,44 @@
+.features {
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    @include on-tablet {
+      gap: 90px;
+      padding: 60px 90px;
+      background-image: url('../assets/images/tablet/tablet-features.png');
+    }
+
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 390px);
+      grid-auto-flow: row;
+      gap: 64px 30px;
+      justify-content: center;
+      padding: 60px 102.5px;
+      background-image: url('../assets/images/desktop/desk-features.png');
+    }
+
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    min-height: 575px;
+    padding: 30px 10px;
+    background-color: $color-bg-secondary;
+    background-image: url('../assets/images/mobile/mob-features.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    scroll-snap-type: x mandatory;
+  }
+
+  &__feature {
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+}

@@ -2,12 +2,64 @@
   height: 100%;
 
   &__body {
+    min-height: 100%;
+    background-color: $color-bg-primary;
+    color: $color-text-primary;
+
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+
+  &__header {
+    @include on-tablet {
+      margin-bottom: 140px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 170px;
+    }
+
+    margin-top: 30px;
+    margin-bottom: 110px;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 30px;
+    right: 0;
+    left: 0;
+    transition: transform 700ms;
+    transform: translateX(-100%);
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+
+  &__main {
+    @include on-tablet {
+      gap: 140px;
+      margin-bottom: 140px;
+    }
+
+    @include on-desktop {
+      gap: 170px;
+      margin-bottom: 170px;
+    }
+
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    gap: 110px;
+    margin-bottom: 110px;
   }
 
   &__footer {
+    @include on-tablet {
+      padding-bottom: 30px;
+    }
+
     margin-top: auto;
+    padding-bottom: 20px;
   }
 }

@@ -1,0 +1,22 @@
+.card {
+  &__image {
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: 0 auto 50px;
+  }
+
+  &__title {
+    @include on-desktop {
+      min-height: $min-height;
+    }
+
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $color-text-secondary;
+    text-align: center;
+  }
+}

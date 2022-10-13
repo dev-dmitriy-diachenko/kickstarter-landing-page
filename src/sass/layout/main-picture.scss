@@ -1,0 +1,16 @@
+.main-picture {
+  &__container {
+    @extend %container;
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}

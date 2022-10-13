@@ -1,0 +1,48 @@
+.get-in-touch {
+  &__container {
+    @extend %container;
+
+    @include on-tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    @include on-desktop {
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    @include on-tablet {
+      flex: 1 1 340px;
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 27px;
+  }
+
+  &__form {
+    @include on-tablet {
+      flex: 1 1 340px;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__email {
+    margin-bottom: 20px;
+  }
+
+  &__message {
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    @include on-desktop {
+      width: 150px;
+      height: 48px;
+    }
+  }
+}

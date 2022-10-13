@@ -1,0 +1,40 @@
+.our-thoughts {
+  &__container {
+    @extend %container;
+
+    @include on-tablet {
+      padding-top: 60px;
+      background-size: 233px 192px;
+    }
+
+    @include on-desktop {
+      max-width: 1030px;
+      padding-top: 42px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-image: url('../assets/images/svg/quotes.svg');
+    background-position: top;
+    background-size: 208px 171px;
+    background-repeat: no-repeat;
+  }
+
+  &__qoute {
+    margin-bottom: 30px;
+  }
+
+  &__human-photo {
+    margin-bottom: 20px;
+  }
+
+  &__human-name {
+    margin-bottom: 5px;
+  }
+
+  &__human-position {
+    color: $color-text-secondary;
+  }
+}

@@ -1,0 +1,31 @@
+.about-us {
+  &__container {
+    @extend %container;
+
+    @include on-tablet {
+      gap: 140px;
+    }
+
+    @include on-desktop {
+      gap: 170px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+  }
+
+  &__article:nth-child(odd) {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-left: -34px;
+    }
+  }
+
+  &__article:nth-child(even) {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-right: -34px;
+    }
+
+    flex-direction: row-reverse;
+  }
+}
