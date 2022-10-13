@@ -1,41 +1,17 @@
-.footer__container,
-.get-in-touch__container,
-.features__container,
-.our-thoughts__container,
-.about-us__container,
-.main-picture__container,
-.our-story__container,
-.menu__container,
-.header__container {
+.footer__container, .get-in-touch__container, .features__container, .our-thoughts__container, .about-us__container, .main-picture__container, .our-story__container, .menu__container, .header__container {
   max-width: 425px;
   margin: 0 auto;
   padding: 0 30px;
 }
 @media screen and (min-width: 768px) {
-  .footer__container,
-  .get-in-touch__container,
-  .features__container,
-  .our-thoughts__container,
-  .about-us__container,
-  .main-picture__container,
-  .our-story__container,
-  .menu__container,
-  .header__container {
+  .footer__container, .get-in-touch__container, .features__container, .our-thoughts__container, .about-us__container, .main-picture__container, .our-story__container, .menu__container, .header__container {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 34px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer__container,
-  .get-in-touch__container,
-  .features__container,
-  .our-thoughts__container,
-  .about-us__container,
-  .main-picture__container,
-  .our-story__container,
-  .menu__container,
-  .header__container {
+  .footer__container, .get-in-touch__container, .features__container, .our-thoughts__container, .about-us__container, .main-picture__container, .our-story__container, .menu__container, .header__container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 120px;
@@ -72,7 +48,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -123,12 +99,12 @@ sub {
 @font-face {
   font-weight: 400;
   font-family: Inter;
-  src: url('../assets/fonts/Inter-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/Inter-Regular.ttf") format("truetype");
 }
 @font-face {
   font-weight: 700;
   font-family: Inter;
-  src: url('../assets/fonts/Inter-Bold.ttf') format('truetype');
+  src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
 }
 .page {
   font-family: Inter, sans-serif;
@@ -316,7 +292,7 @@ sub {
   color: #0db2b3;
 }
 .btn--see-more::after {
-  content: '';
+  content: "";
   display: block;
   width: 40%;
   margin-top: 6px;
@@ -346,20 +322,20 @@ sub {
 .icon--logo {
   width: 161px;
   height: 24px;
-  background-image: url('../assets/images/svg/logo.svg');
+  background-image: url("../assets/images/svg/logo.svg");
 }
 .icon--logo:hover {
-  background-image: url('../assets/images/svg/logo-hover.svg');
+  background-image: url("../assets/images/svg/logo-hover.svg");
 }
 .icon--burger-menu {
   width: 32px;
   height: 32px;
-  background-image: url('../assets/images/svg/burger-menu.svg');
+  background-image: url("../assets/images/svg/burger-menu.svg");
 }
 .icon--close {
   width: 32px;
   height: 32px;
-  background-image: url('../assets/images/svg/close.svg');
+  background-image: url("../assets/images/svg/close.svg");
 }
 .icon--avatar {
   box-sizing: initial;
@@ -376,28 +352,28 @@ sub {
   background-position: 0 0;
 }
 .icon--facebook {
-  background-image: url('../assets/images/svg/facebook.svg');
+  background-image: url("../assets/images/svg/facebook.svg");
 }
 .icon--facebook:hover {
-  background-image: url('../assets/images/svg/facebook-hover.svg');
+  background-image: url("../assets/images/svg/facebook-hover.svg");
 }
 .icon--twitter {
-  background-image: url('../assets/images/svg/twitter.svg');
+  background-image: url("../assets/images/svg/twitter.svg");
 }
 .icon--twitter:hover {
-  background-image: url('../assets/images/svg/twitter-hover.svg');
+  background-image: url("../assets/images/svg/twitter-hover.svg");
 }
 .icon--instagram {
-  background-image: url('../assets/images/svg/instagram.svg');
+  background-image: url("../assets/images/svg/instagram.svg");
 }
 .icon--instagram:hover {
-  background-image: url('../assets/images/svg/instagram-hover.svg');
+  background-image: url("../assets/images/svg/instagram-hover.svg");
 }
 .icon--up {
-  background-image: url('../assets/images/svg/up.svg');
+  background-image: url("../assets/images/svg/up.svg");
 }
 .icon--up:hover {
-  background-image: url('../assets/images/svg/up-hover.svg');
+  background-image: url("../assets/images/svg/up-hover.svg");
 }
 
 .input {
@@ -411,6 +387,19 @@ sub {
 }
 .input--message {
   height: 128px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c797a;
 }
 
 .page {
@@ -767,7 +756,7 @@ sub {
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  background-image: url('../assets/images/svg/quotes.svg');
+  background-image: url("../assets/images/svg/quotes.svg");
   background-position: top;
   background-size: 208px 171px;
   background-repeat: no-repeat;
@@ -817,7 +806,7 @@ sub {
   align-items: center;
 }
 .feature__item::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 4px;
   height: 4px;
@@ -835,7 +824,7 @@ sub {
   min-height: 575px;
   padding: 30px 10px;
   background-color: #d6ecec;
-  background-image: url('../assets/images/mobile/mob-features.png');
+  background-image: url("../assets/images/mobile/mob-features.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   scroll-snap-type: x mandatory;
@@ -844,7 +833,7 @@ sub {
   .features__content {
     gap: 90px;
     padding: 60px 90px;
-    background-image: url('../assets/images/tablet/tablet-features.png');
+    background-image: url("../assets/images/tablet/tablet-features.png");
   }
 }
 @media screen and (min-width: 1440px) {
@@ -855,7 +844,7 @@ sub {
     gap: 64px 30px;
     justify-content: center;
     padding: 60px 102.5px;
-    background-image: url('../assets/images/desktop/desk-features.png');
+    background-image: url("../assets/images/desktop/desk-features.png");
   }
 }
 .features__feature {
